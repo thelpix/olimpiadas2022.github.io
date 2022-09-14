@@ -1,0 +1,37 @@
+header{
+    background-color: #2869be;
+    display: flex;
+}
+
+.logo{
+    height: 5vh;
+    width: auto;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-wrapper li{
+    list-style: none;
+    display: inline-block;
+}
+
+.cover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover-background{
+    width: 100%;
+    height: auto;
+}
+
+.cover-container{
+}
