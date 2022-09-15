@@ -117,7 +117,53 @@ nav{
     width: 100%;
 }
 
+.museum-about{
+    display:flex;
+    align-items: flex-start;
+}
+
+.logo-maps{
+    width: 15%;
+}
+
 .museum-maps{
-    width: 10%;
+    width: 100%;
     margin: 1.5vh 3vw;
+}
+
+.about{
+    margin: 3% 0 0 8%;
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+.--small{
+    font-size: smaller;
+    font-style: italic;
+}
+
+.footer{
+    background-color: #000000;
+}
+
+.footer-social{
+    margin: 2vh 3vw 0;
+}
+
+.social-links{
+    margin: 0;
+}
+
+.social-title{
+    color: #ffffff;
+    padding-top: 2vh;
+}
+
+.social-links{
+    display: flex;
+    margin: 5% 0 0;
+}
+
+.social-logo{
+    width: 20%;
 }
