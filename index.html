@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reseter.css"/>
+        <script src="main.js"></script>
     </head>
     <body>
         <header>
@@ -31,23 +32,25 @@
         </section>
         <main class="content">
             <div class="content-carousel">
-                <h2>Arte del Momento</h2>
+                <h2 class="content-carousel-title">ARTE DEL MOMENTO</h2>
                 <div class="content-carousel-container">
-                    <div class="content-carousel-imgs">
-                        <img class="carousel-img" href="img/carousel-image1.jpg" alt="Image 1">
-                        <img class="carousel-img" alt="Image 2">
+                    <div class="carousel-imgs">
+                        <img class="carousel-img" src="img/carousel-image1.jpg" alt="Image 1">
+                        <img class="carousel-img" src="img/carousel-image2.jpg" alt="Image 2">
                     </div>
-                    <ul class="content-carousel-slider">
-                        <li class="carousel-slider"></li>
-                        <li class="carousel-slider"></li>
-                    </ul>
+                    <div class="carousel-arrows">
+                        <div class="carousel-arrow --left"> << </div>
+                        <div class="carousel-arrow --right"> >> </div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
             <div class="content-location">
-                <h2>Ubicación</h2>
+                <h2 class="location-title">UBICACIÓN</h2>
                 <div class="content-location-museum">
-                    <img>
-                    <h3>google maps</h3>
+                    <img class="museum-image" src="img/museo_exterior.jpg" alt="Exterior del Museo">
+                    <a href="https://goo.gl/maps/d6ir7PetVt78Xs1T9"><img class="museum-maps" src="img/google-maps.png" alt="Ubicación del Museo"></a>
+                    <h3></h3>
                 </div>
             </div>
         </main>

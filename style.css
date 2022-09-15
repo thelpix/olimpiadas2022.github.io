@@ -1,6 +1,7 @@
 header{
     background-color: #2869be;
     display: flex;
+    justify-content: space-between;
 }
 
 .logo{
@@ -64,7 +65,59 @@ nav{
     align-items: flex-start;
 }
 
-.content-carousel-container{
+.content-carousel{
+    margin: 0 0 3vh 0;
+}
+
+.content-carousel-title{
+    margin: 0 0 2vh 0;
+}
+
+.carousel-container{
     width: 90%;
-    max-width: 120em;
+}
+
+.carousel-imgs{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: flex-start;
+    position:relative;
+    overflow-x: hidden;
+}
+
+.carousel-img{
+    width: 100%;
+    border-radius: 3px;
+}
+
+.carousel-arrows{
+    cursor: pointer;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 2vh 0;
+}
+
+.carousel-arrow{
+    margin: 0 30%;
+    font-size: larger;
+}
+
+.content-location{
+    width: 100%;
+    background-color:blanchedalmond;
+}
+
+.location-title{
+    margin: 1vh 1vw;
+}
+
+.museum-image{
+    width: 100%;
+}
+
+.museum-maps{
+    width: 10%;
+    margin: 1.5vh 3vw;
 }
