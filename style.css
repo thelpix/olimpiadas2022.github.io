@@ -104,22 +104,46 @@ nav{
     font-size: larger;
 }
 
-.content-location{
+.content-activities, .content-location{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.content-activities{
     width: 100%;
-    background-color:blanchedalmond;
+    background-color: #ffebcd;
+    margin-bottom: 5vh;
 }
 
-.location-title{
-    margin: 1vh 1vw;
-}
-
-.museum-image{
+.activities-image, .museum-image{
     width: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
-.museum-about{
+.museum-about, .activities-about{
     display:flex;
     align-items: flex-start;
+}
+
+.activities-about{
+    flex-direction: column;
+    margin: 2vh 1vw;
+}
+
+.activities-about h3{
+    margin-bottom: 3vh;
+    border-bottom: 1px #000000 solid;
+}
+
+.content-location{
+    width: 100%;
+    background-color:#ffebcd;
+}
+
+.location-title, .activities-title{
+    margin: 1vh 1vw;
+    padding-top: 1vh;
 }
 
 .logo-maps{
@@ -144,10 +168,11 @@ nav{
 
 .footer{
     background-color: #000000;
+    color:#ffffff;
 }
 
-.footer-social{
-    margin: 2vh 3vw 0;
+.footer-social, .footer-end{
+    margin: 3vh 5vw 0;
 }
 
 .social-links{
@@ -155,7 +180,6 @@ nav{
 }
 
 .social-title{
-    color: #ffffff;
     padding-top: 2vh;
 }
 
@@ -164,6 +188,39 @@ nav{
     margin: 5% 0 0;
 }
 
+.social-links li{
+    list-style: none;
+}
+
+.social-link{
+    display: flex; 
+    justify-content: center;
+}
+
+
 .social-logo{
     width: 20%;
+}
+
+.end-title{
+    border-top: 1px solid #ffffff; 
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.end-content li{
+   list-style: none;
+   margin: 0.5vh 0; 
+}
+
+.end-content li p{
+    font-size: 0.8rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.footer-credits{
+    border-top: 1px solid #ffffff; 
+    padding-top: 1vh;
+    width: 100%;
 }
