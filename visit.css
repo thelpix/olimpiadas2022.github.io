@@ -1,0 +1,175 @@
+header{
+    background-color: #36558F;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    
+}
+
+.logo{
+    height: 5vh;
+    width: auto;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-wrapper{
+    display:flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+    z-index: 999;
+    transition: all .5s ease-in-out;
+}
+
+.nav-wrapper a{
+    color:#36558F;
+    transition: all .5s ease-in-out;
+    text-decoration: none;
+}
+
+.nav-wrapper li{
+    list-style: none;
+    display: inline-block;
+    z-index: 999;
+    transition: all 1s ease-in-out;
+    padding: 1vh 0;
+    background-color: #36558F;
+}
+
+
+/*Animacion del Nav*/
+.nav-wrapper.open{
+    transform: translateY(5.5vh);
+    overflow: visible;
+}
+
+.nav-wrapper.open a{
+    color:#fff;
+}
+
+.nav-wrapper.open li{
+    background-color: #000000;
+}
+.menu-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    cursor:pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burguer{
+    width: 2rem;
+    height: 6px;
+    background: #fff;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+
+.menu-btn__burguer::before,
+.menu-btn__burguer::after{
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 6px;
+    background: #fff;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+
+.menu-btn__burguer::before{
+    transform: translateY(-200%);
+}
+
+.menu-btn__burguer::after{
+    transform: translateY(200%);
+}
+
+
+/*Animacion de la hamburguesa*/
+
+.menu-btn.open .menu-btn__burguer{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burguer::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burguer::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
+.footer{
+    background-color: #000000;
+    color:#ffffff;
+}
+
+.footer-social, .footer-end{
+    margin: 3vh 5vw 0;
+}
+
+.social-links{
+    margin: 0;
+}
+
+.social-title{
+    padding-top: 2vh;
+}
+
+.social-links{
+    display: flex;
+    margin: 5% 0 0;
+}
+
+.social-links li{
+    list-style: none;
+}
+
+.social-link{
+    display: flex; 
+    justify-content: center;
+}
+
+
+.social-logo{
+    width: 20%;
+}
+
+.end-title{
+    border-top: 1px solid #ffffff; 
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.end-content li{
+   list-style: none;
+   margin: 0.5vh 0; 
+}
+
+.end-content li p{
+    font-size: 0.8rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.footer-credits{
+    border-top: 1px solid #ffffff; 
+    padding-top: 1vh;
+    width: 100%;
+}
